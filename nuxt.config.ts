@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     'nuxt-icon',
     ['@nuxtjs/google-fonts', {
       families: {
-        Inter: true,
+        Inter: [400, 500, 600, 700],
       }
     }],
   ],

@@ -1,10 +1,15 @@
 <template>
     <NuxtLayout />
-    <h1>Teste</h1>
 </template>
+ 
 
-<style lang="scss" scoped>
-h1 {
-    color: $primary-base;
+<style>
+html,
+body,
+div#__nuxt,
+#__layout,
+#__layout>div,
+#app {
+    height: 100%;
 }
 </style>
