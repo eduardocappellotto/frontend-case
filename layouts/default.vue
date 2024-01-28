@@ -1,10 +1,11 @@
 <template>
     <div class="layout">
         <JSidebar />
-        <JHeader />
+        <div class="layout__content">
+            <JHeader />
+            <slot />
+        </div>
     </div>
-
-    <slot />
 </template>
   
 <script lang="ts" setup>
@@ -18,6 +19,10 @@ const toggleNavbar = () => {
     display: flex;
     height: 100%;
     background-color: $bg-white-0;
+
+    &__content {
+        width: -webkit-fill-available;
+    }
 }
 </style>
   
