@@ -16,6 +16,7 @@ export default defineNuxtConfig({
     ['@nuxtjs/google-fonts', {
       families: {
         Inter: [400, 500, 600, 700],
+        InterTight: [400, 500, 600, 700],
       }
     }],
   ],

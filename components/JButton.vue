@@ -1,8 +1,8 @@
 <template>
     <button @click="emit('click')" class="j-button" :class="{ 'col-reverse': revert, [`j-button--${type}`]: type }">
         <div class="j-button__left">
-            <Icon v-if="props.icon" :name="props.icon" size="1.5rem" />
-            <div class="mx-1"></div>
+            <Icon v-if="props.icon" :name="props.icon" :size="props.iconSize" />
+            <div v-if="props.icon && props.text" class="mx-1"></div>
             <span class="j-button__text">{{ text }}</span>
         </div>
 
@@ -17,6 +17,10 @@ const props = defineProps({
     revert: Boolean,
     text: String,
     type: String,
+    iconSize: {
+        type: String,
+        default: '1.25rem'
+    },
 });
 
 const emit = defineEmits(['click']);
@@ -70,6 +74,12 @@ const emit = defineEmits(['click']);
         background-color: transparent;
         box-sizing: border-box;
         border: 1px solid $stroke-soft-200;
+        color: $text-sub-500;
+    }
+
+    &--icon {
+        background-color: transparent;
+        box-sizing: border-box;
         color: $text-sub-500;
     }
 

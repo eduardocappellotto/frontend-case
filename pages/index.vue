@@ -1,6 +1,8 @@
 <template>
     <div class="container mx-10">
-        <div class="div1">Div 1</div>
+        <div class="div1">
+            <TimeTrackerCard />
+        </div>
         <div class="div2">Div 2</div>
         <div class="div3">Div 3</div>
         <div class="div4">Div 4</div>
@@ -15,15 +17,15 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-gap: 1.5rem;
+    grid-gap: 1rem;
 
-    height: 80vh;
+    height: 85vh;
     overflow: auto;
 }
 
 .div1 {
     grid-area: 1 / 1 / 3 / 2;
-    background-color: #ff5733;
+
     color: white;
     display: flex;
     align-items: center;
@@ -121,7 +123,8 @@
     .div5,
     .div6 {
         grid-area: auto;
-        min-height: 380px;
+        min-height: 23.75rem;
+        max-width: 22rem;
     }
 }
 </style>
