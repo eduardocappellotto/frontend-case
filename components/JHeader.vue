@@ -1,5 +1,5 @@
 <template>
-    <div class="j-header mt-2 mb-10 mx-10">
+    <div class="j-header mt-2 mb-6 mx-10">
         <div class="j-header__usercontent">
             <img class="j-header__usercontent__avatar" src="/img/avatar.png" alt="User Photo" />
             <div class="j-header__usercontenttext ml-4">
@@ -20,7 +20,7 @@
 <style scoped lang="scss">
 .j-header {
 
-    width: 100%;
+    width: auto;
     height: 88px;
 
     display: flex;
@@ -29,6 +29,11 @@
 
     & .j-header__usercontent {
         display: flex;
+
+        &__avatar {
+            width: 48px;
+            height: 48px;
+        }
 
         & .j-header__usercontenttext {
             display: flex;
