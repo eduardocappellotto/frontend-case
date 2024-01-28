@@ -73,7 +73,26 @@ const toggleSidebarVertically = () => {
     isExpandedVertically.value = !isExpandedVertically.value;
 }
 
+const checkWindowSize = () => {
+    if (window.innerWidth < 768) {
+        if (!isExpandedHorizontally.value) {
+            toggleSidebarHorizontally();
+        }
+    } else {
+        if (isExpandedHorizontally.value) {
+            toggleSidebarHorizontally();
+        }
+    }
+};
 
+onMounted(() => {
+    window.addEventListener('resize', checkWindowSize);
+    checkWindowSize();
+});
+
+onUnmounted(() => {
+    window.removeEventListener('resize', checkWindowSize);
+});
 
 const navbarMainItems = [
     {
@@ -171,10 +190,8 @@ const updateActiveItem = (index: number) => {
   
 <style scoped lang="scss">
 .layout__sidebar {
-
     height: auto;
     min-width: 225px;
-    transition: width 0.3s;
 
     &.vertical__collapse {
         height: auto;
@@ -183,6 +200,7 @@ const updateActiveItem = (index: number) => {
     &.collapse {
         min-width: 28px;
         height: calc(100vh - 40px);
+
 
         & .j-sidebar__middle {
             align-items: center;
