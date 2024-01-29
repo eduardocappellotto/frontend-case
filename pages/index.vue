@@ -3,7 +3,9 @@
         <div class="div1">
             <TimeTrackerCard />
         </div>
-        <div class="div2">Div 2</div>
+        <div class="div2">
+            <DailyHoursCard :daily-hours="barData" />
+        </div>
         <div class="div3">Div 3</div>
         <div class="div4">Div 4</div>
         <div class="div5">Div 5</div>
@@ -11,6 +13,16 @@
 
     </div>
 </template>
+
+<script setup lang="ts">
+
+const barData = [
+    { percentage: 30, color: '#F2AE40', label: 'Descanso', minutes: 60 },
+    { percentage: 50, color: '#35B9E9', label: 'Ativo', minutes: 160 },
+    { percentage: 20, color: '#6E3FF3', label: 'Hora Extra', minutes: 759 },
+];
+
+</script>
 
 <style lang="scss" scoped>
 .container {
@@ -34,7 +46,7 @@
 
 .div2 {
     grid-area: 1 / 2 / 2 / 3;
-    background-color: #33ff57;
+
     color: white;
     display: flex;
     align-items: center;
