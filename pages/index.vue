@@ -9,7 +9,9 @@
         <div class="div3">
             <CoursesProgressCard :course="courseData" />
         </div>
-        <div class="div4">Div 4</div>
+        <div class="div4">
+            <MVPsCard />
+        </div>
         <div class="div5">Div 5</div>
         <div class="div6">Div 6</div>
 
@@ -46,8 +48,6 @@ const courseData = {
 
 .div1 {
     grid-area: 1 / 1 / 3 / 2;
-
-    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,8 +55,6 @@ const courseData = {
 
 .div2 {
     grid-area: 1 / 2 / 2 / 3;
-
-    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,7 +62,6 @@ const courseData = {
 
 .div3 {
     grid-area: 2 / 2 / 3 / 3;
-    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,8 +69,6 @@ const courseData = {
 
 .div4 {
     grid-area: 1 / 3 / 3 / 4;
-    background-color: #ff33f3;
-    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,7 +77,6 @@ const courseData = {
 .div5 {
     grid-area: 3 / 1 / 5 / 3;
     background-color: #33f3ff;
-    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,7 +85,6 @@ const courseData = {
 .div6 {
     grid-area: 3 / 3 / 5 / 4;
     background-color: #f3ff33;
-    color: black;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -1,5 +1,6 @@
 <template>
-    <button @click="emit('click')" class="j-button" :class="{ 'col-reverse': revert, [`j-button--${type}`]: type }">
+    <button :disabled="disabled" @click="emit('click')" class="j-button"
+        :class="{ 'col-reverse': revert, [`j-button--${type}`]: type }">
         <div class="j-button__left">
             <Icon v-if="props.icon" :name="props.icon" :size="props.iconSize" />
             <div v-if="props.icon && props.text" class="mx-1"></div>
@@ -16,6 +17,7 @@ const props = defineProps({
     icon: String,
     revert: Boolean,
     text: String,
+    disabled: Boolean,
     type: String,
     iconSize: {
         type: String,
