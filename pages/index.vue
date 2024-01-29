@@ -15,7 +15,9 @@
         <div class="div5">
             <CoursesCard />
         </div>
-        <div class="div6">Div 6</div>
+        <div class="div6">
+            <DailyFeedbackCard />
+        </div>
 
     </div>
 </template>
@@ -78,7 +80,6 @@ const courseData = {
 
 .div5 {
     grid-area: 3 / 1 / 5 / 3;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,7 +87,6 @@ const courseData = {
 
 .div6 {
     grid-area: 3 / 3 / 5 / 4;
-    background-color: #f3ff33;
     display: flex;
     align-items: center;
     justify-content: center;
