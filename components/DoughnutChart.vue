@@ -11,7 +11,7 @@ ChartJS.register(ArcElement, Tooltip, Legend)
 const data = {
     datasets: [
         {
-            backgroundColor: ['#41B883', '#E2E4E9'],
+            backgroundColor: ['#ff4a00', '#E2E4E9'],
             data: [25, 75]
         }
     ]
@@ -20,7 +20,12 @@ const data = {
 const options = {
     responsive: true,
     maintainAspectRatio: false,
-    cutout: 30
+    cutout: 30,
+    plugins: {
+        tooltip: {
+            enabled: false
+        }
+    }
 }
 
 
