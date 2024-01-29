@@ -40,7 +40,7 @@
             flex-direction: column;
 
             & .j-header__usercontenttext__username {
-                font-family: Inter;
+
                 font-size: 18px;
                 font-weight: 500;
                 line-height: 24px;
@@ -48,8 +48,7 @@
                 text-align: left;
             }
 
-            & .j-header__usercontexttext__welcomeback {
-                font-family: Inter;
+            & .j-header__usercontenttext__welcomeback {
                 font-size: 14px;
                 font-weight: 400;
                 line-height: 20px;

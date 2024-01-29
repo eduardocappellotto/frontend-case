@@ -6,7 +6,9 @@
         <div class="div2">
             <DailyHoursCard :daily-hours="barData" />
         </div>
-        <div class="div3">Div 3</div>
+        <div class="div3">
+            <CoursesProgressCard :course="courseData" />
+        </div>
         <div class="div4">Div 4</div>
         <div class="div5">Div 5</div>
         <div class="div6">Div 6</div>
@@ -21,6 +23,13 @@ const barData = [
     { percentage: 50, color: '#35B9E9', label: 'Ativo', minutes: 160 },
     { percentage: 20, color: '#6E3FF3', label: 'Hora Extra', minutes: 759 },
 ];
+
+const courseData = {
+    courseId: "68d9a3ba-9d42-43b2-9259-a4fda5da399c",
+    courseTitle: "Diversidade da equipe",
+    courseSmallDescription: "Projetado para promover a inclusividade e perspectivas diversas.",
+    percentage: 25
+}
 
 </script>
 
@@ -55,7 +64,6 @@ const barData = [
 
 .div3 {
     grid-area: 2 / 2 / 3 / 3;
-    background-color: #5733ff;
     color: white;
     display: flex;
     align-items: center;

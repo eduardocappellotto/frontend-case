@@ -83,6 +83,11 @@ const emit = defineEmits(['click']);
         color: $text-sub-500;
     }
 
+    &--anchor {
+        color: $primary-base;
+        text-decoration: underline;
+    }
+
     &:hover {
         opacity: 0.8;
     }

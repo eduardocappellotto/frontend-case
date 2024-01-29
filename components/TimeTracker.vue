@@ -169,7 +169,7 @@ const deleteTaskByIndex = (index: number) => {
     }
 
     &__tracker-timer {
-        font-family: "InterDisplay";
+        font-family: "Inter";
         font-size: 40px;
         font-weight: 500;
         line-height: 48px;

@@ -12,7 +12,8 @@
         </template>
         <template #body>
             <div class="ma-4">
-                <span class="dailyhours__totaltime mb-6"> {{ totalTime }}</span>
+                <span class="dailyhours__totaltime mb-6"> {{ totalTime }} no total
+                </span>
                 <div class="dailyhours__bar">
                     <div v-for="item in formattedHours" :key="item.label" class="dailyhours__bar-section mx-1"
                         :style="{ width: item.percentage + '%', backgroundColor: item.color }">
