@@ -12,7 +12,9 @@
         <div class="div4">
             <MVPsCard />
         </div>
-        <div class="div5">Div 5</div>
+        <div class="div5">
+            <CoursesCard />
+        </div>
         <div class="div6">Div 6</div>
 
     </div>
@@ -76,7 +78,7 @@ const courseData = {
 
 .div5 {
     grid-area: 3 / 1 / 5 / 3;
-    background-color: #33f3ff;
+
     display: flex;
     align-items: center;
     justify-content: center;
