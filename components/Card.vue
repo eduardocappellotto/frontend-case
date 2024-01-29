@@ -17,11 +17,7 @@
     border: 1px solid #ddd;
     border-radius: 16px;
 
-
-
     width: 100%;
-
-
     height: 100%;
 
     &__header {
