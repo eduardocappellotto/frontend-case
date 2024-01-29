@@ -233,7 +233,7 @@ const deleteTaskByIndex = (index: number) => {
         height: 8rem;
         list-style: none;
         padding: 0;
-        overflow-y: scroll;
+        overflow: auto;
 
         li {
             display: flex;
